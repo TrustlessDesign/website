@@ -1,2 +1,159 @@
-@import '../node_modules/bootstrap/dist/css/bootstrap.css';
+$primary: red;
+// $light: white;
+$dark: orange;
+$body-color: white;
+// $navbar-light-color: yellow;
+$navbar-dark-color: purple;
+
+@import '../node_modules/bootstrap/scss/bootstrap';
 @import '../node_modules/font-awesome/css/font-awesome.css';
+
+@import './footer';
+
+$bodyBg: #082634;
+
+body  {
+  background: #ececec;
+  padding-top: 100px;
+  font-size: 14px;
+}
+
+.logo {
+  position: absolute;
+  margin: auto;
+  left: calc(50% - 50px);
+
+  &-image {
+    background: url('../assets/img/logo1.png');
+    width: 100px;
+    height: 124px;
+    filter: invert(1);
+    background-size: contain;
+  }
+
+  &-text {
+    position: absolute;
+    width: 120px;
+    top: 130px;
+
+    &-1, &-2 {
+      // position: absolute;
+    }
+  }
+}
+
+.header {
+  position: absolute;
+  background: white;
+  width: 60%;
+  right: 0;
+  top: 0;
+  height: 60px;
+  line-height: 60px;
+  padding-left: 6%;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -15%;
+    top: 0;
+    bottom: 0;
+    width: 20.4%;
+    background: $bodyBg;
+    transform: skew(-23deg);
+    z-index: 10;
+    width: 25%;
+    left: -16.3%;
+    z-index: 10;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    list-style: none;
+    height: 80px;
+    overflow: hidden;
+    padding-left: 5rem;
+    font-size: 14px;
+
+    li {
+      display: inline-block;
+      color: black;
+      z-index: 2;
+      min-width: 100px;
+
+      a {
+        font-size: 1.5rem;
+        display: block;
+        padding: 2.75rem 1rem;
+        position: relative;
+        z-index: 1;
+        text-transform: uppercase;
+        transition: color 0.2s ease-out 0.1s;
+        color: black;
+        padding-top: 0;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.tlogo {
+  left: -76px;
+  color: white;
+  z-index: 10;
+  position: absolute;
+}
+
+.badge {
+  background: url('../assets/img/solution-badge.png');
+}
+
+.left {
+    position: absolute;
+    left: -15%;
+    top: 0;
+    bottom: 0;
+    width: 20.4%;
+    background: $bodyBg;
+    transform: skew(-23deg);
+    z-index: 10;
+    width: 25%;
+    left: -16.3%;
+    z-index: 10;
+}
+
+.left-1 {
+  position: absolute;
+  top: 150px;
+  bottom: 0;
+  background: #082634;
+  transform: skew(-23deg);
+  width: 2%;
+  left: 26%;
+  z-index: 10;
+  height: 150px;
+}
+
+.left-2 {
+  position: absolute;
+  top: 150px;
+  bottom: 0;
+  background: #082634;
+  transform: skew(-23deg);
+  width: calc(2% - 20px);
+  left: calc(26% + 51px);
+  z-index: 10;
+  height: 150px;
+}
+
+.text-main {
+  display: block;
+  position: absolute;
+  font-size: 92px;
+  color: #082634;
+  z-index: 99;
+  left: 640px;
+  top: 165px;
+}
