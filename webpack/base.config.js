@@ -54,7 +54,7 @@ module.exports = {
       },
       // Loader for the image files
       {
-        test: /\.(png|jpg|gif|svg)$/,
+        test: /\.(png|jpg|gif|svg|webp)$/,
         loader: 'file-loader',
         options: {
           name: 'img/[name].[ext]'

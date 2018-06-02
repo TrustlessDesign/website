@@ -13,9 +13,11 @@ $navbar-dark-color: purple;
 $bodyBg: #082634;
 
 body  {
-  background: #ececec;
+  background: #ffffff;
   padding-top: 100px;
   font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+
 }
 
 .logo {
@@ -24,7 +26,6 @@ body  {
   left: calc(50% - 50px);
 
   &-image {
-    background: url('../assets/img/logo1.png');
     width: 100px;
     height: 124px;
     filter: invert(1);
@@ -47,11 +48,28 @@ body  {
   background: white;
   width: 60%;
   right: 0;
-  top: 0;
+  top: 4px;
   height: 60px;
   line-height: 60px;
   padding-left: 6%;
   text-transform: uppercase;
+  overflow: hidden;
+
+  &-bar {
+    top: 0px;
+    position: absolute;
+    height: 70px;
+    background: #082634;
+    width: 100%;
+  }
+
+  &-bar1 {
+    top: 65px;
+    position: absolute;
+    height: 4px;
+    background: white;
+    width: 100%;
+  }
 
   &::before {
     content: "";
@@ -60,11 +78,28 @@ body  {
     top: 0;
     bottom: 0;
     width: 20.4%;
-    background: $bodyBg;
+    background: #082634;
+    -webkit-transform: skew(-23deg);
     transform: skew(-23deg);
     z-index: 10;
-    width: 25%;
-    left: -16.3%;
+    width: 19%;
+    left: -9.3%;
+    z-index: 10;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -15%;
+    top: 0px;
+    bottom: 0;
+    width: 20.4%;
+    background: #cbd1d4;
+    -webkit-transform: skew(-23deg);
+    transform: skew(-23deg);
+    z-index: 10;
+    width: 922px;
+    left: 558px;
     z-index: 10;
   }
 
@@ -100,14 +135,65 @@ body  {
 }
 
 .tlogo {
-  left: -76px;
+  right: 57%;
   color: white;
   z-index: 10;
   position: absolute;
+  top: 23px;
+  font-weight: bold;
+  text-shadow: #00000059 2px 4px 10px;
+  z-index: 12;
 }
 
 .badge {
-  background: url('../assets/img/solution-badge.png');
+  // background: url('../assets/img/solution-badge.png');
+}
+
+.main-section {
+  margin-top: 60px;
+}
+
+.logan {
+  background: url('../assets/img/logan1.jpg');
+  background-size: 156%;
+  background-position-y: -41px;
+  border-radius: 50%;
+  background-position-x: -75px;
+  box-shadow: #0000001a 0px 10px 10px 4px;
+  filter: grayscale(1);
+}
+
+.daniel {
+  background: url('../assets/img/daniel2.png');
+  background-size: 180px;
+  background-position-y: 0px;
+  border-radius: 50%;
+  box-shadow: #0000001a 0px 10px 10px 4px;
+  filter: grayscale(1);
+}
+
+.author {
+  text-align: center;
+  min-height: 200px;
+
+  &-image {
+    width: 180px;
+    height: 180px;
+    left: calc(50% - 90px);
+    position: absolute;
+    top: 0;
+
+    &:hover {
+      filter: none;
+    }
+  }
+
+  &-text {
+    margin-top: 210px;
+    text-shadow: #00000059 2px 4px 10px;
+    letter-spacing: 2px;
+    color: #4e4e4e;
+  }
 }
 
 .left {
@@ -122,6 +208,7 @@ body  {
     width: 25%;
     left: -16.3%;
     z-index: 10;
+    box-shadow: #afafaf 7px -35px 0px;
 }
 
 .left-1 {
