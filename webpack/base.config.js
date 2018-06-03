@@ -89,6 +89,10 @@ module.exports = {
       filename: 'index.html',
       template: 'src/index.html'
     }),
+    new HtmlWebpackPlugin({
+      filename: 'experts.html',
+      template: 'src/experts.html'
+    }),
     new MiniCssExtractPlugin({
       filename: isHot ? '[name].css' : '[name].[contenthash].css',
       chunkFilename: '[id].css'

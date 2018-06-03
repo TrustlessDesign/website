@@ -198,6 +198,18 @@ body  {
     letter-spacing: 2px;
     color: #4e4e4e;
   }
+
+  &-wrapper {
+    background: #ffffff9c;
+    height: 96%;
+    width: 97%;
+    position: absolute;
+    left: 1.5%;
+    top: -28px;
+    z-index: -1;
+    box-shadow: #00000012 1px 1px 4px;
+    display: none;
+  }
 }
 
 .left {
@@ -247,4 +259,28 @@ body  {
   z-index: 99;
   left: 640px;
   top: 165px;
+}
+
+.audit {
+  background: #082634;
+  /* height: 96%; */
+  border: 1px solid #082634;
+  /* width: 97%; */
+  /* left: 1.5%; */
+  color: white;
+  /* top: -28px; */
+  font-weight: 100;
+  /* z-index: -1; */
+  box-shadow: #00000012 1px 1px 4px;
+
+  &-features {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: white;
+
+    li {
+      padding: 10px;
+    }
+  }
 }
