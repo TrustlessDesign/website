@@ -38,10 +38,6 @@ body  {
     position: absolute;
     width: 120px;
     top: 130px;
-
-    &-1, &-2 {
-      // position: absolute;
-    }
   }
 }
 
@@ -145,10 +141,6 @@ body  {
   font-weight: bold;
   text-shadow: #00000059 2px 4px 10px;
   z-index: 12;
-}
-
-.badge {
-  // background: url('../assets/img/solution-badge.png');
 }
 
 .hidden {
@@ -315,18 +307,22 @@ body  {
 
   &-message {
     margin-top: 30px;
-    background: linear-gradient(0px red, 1px blue);
-    width: 370px;
+    width: 88vw;
     position: absolute;
-    left: calc(50% - 185px);
+    left: calc(50% - 44vw);
     color: #4a5e6b;
     padding: 10px 10px;
-    /* background: linear-gradient(0deg, #2b2b2b 0, #340808 100%); */
     font-weight: 400;
     border: 1px solid #4a5e6b21;
     background: #ececec;
-    /* opacity: 0.5; */
+
+
+    @include media-breakpoint-between(md, xl) {
+      width: 370px;
+      left: calc(50% - 185px);
+    }
   }
+
 }
 
 .btn {
