@@ -1,4 +1,4 @@
-$primary: red;
+$primary: #082634;
 // $light: white;
 $dark: orange;
 $body-color: white;
@@ -151,6 +151,10 @@ body  {
   // background: url('../assets/img/solution-badge.png');
 }
 
+.hidden {
+  display: none;
+}
+
 .main-section {
   margin-top: 40px;
 }
@@ -282,5 +286,77 @@ body  {
     li {
       padding: 10px;
     }
+  }
+
+  &-feature {
+    font-size: 24px;
+    text-align: center;
+    color: #082634;
+
+    &-text {
+      margin-top: 20px;
+      font-weight: 400;
+    }
+
+    i {
+      font-size: 36px;
+    }
+
+    &-locked {
+      color: #9e9e9e;
+    }
+  }
+}
+
+.quote {
+  &-row {
+    margin-top: 70px;
+  }
+
+  &-message {
+    margin-top: 30px;
+    background: linear-gradient(0px red, 1px blue);
+    width: 370px;
+    position: absolute;
+    left: calc(50% - 185px);
+    color: #4a5e6b;
+    padding: 10px 10px;
+    /* background: linear-gradient(0deg, #2b2b2b 0, #340808 100%); */
+    font-weight: 400;
+    border: 1px solid #4a5e6b21;
+    background: #ececec;
+    /* opacity: 0.5; */
+  }
+}
+
+.btn {
+  padding: .85rem 2.13rem;
+  white-space: normal!important;
+  word-wrap: break-word;
+  font-size: .8rem;
+  cursor: pointer;
+  transition: .2s ease-out;
+  border-radius: 10em;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+
+  &-primary {
+    font-size: 24px;
+    color: #d8d8d8;
+    border: 0;
+    background: linear-gradient(0deg, #2b2b2b 0, #082634 100%);
+    padding: 20px 40px;
+    font-weight: 400;
+    border-radius: 0em;
+  }
+}
+
+.unlock {
+  &-row {
+    margin-top: 120px;
+  }
+
+  &-title {
+    font-size: 24px;
+    color: #4b5f6b;
   }
 }
