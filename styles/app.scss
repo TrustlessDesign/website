@@ -362,3 +362,22 @@ body  {
     color: #4b5f6b;
   }
 }
+
+.faq {
+  &-question {
+    font-size: 24px;
+    text-align: center;
+    color: #082634;
+    margin-left: 72px;
+    margin-right: 72px;
+  }
+
+  &-answer {
+    font-size: 14px;
+    text-align: center;
+    color: #082634;
+    margin-left: 72px; 
+    margin-right: 72px;
+    margin-bottom: 24px;
+  }
+}
