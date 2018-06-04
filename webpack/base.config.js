@@ -1,23 +1,27 @@
 const webpack = require('webpack');
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const isHot = path.basename(require.main.filename) === 'webpack-dev-server.js';
 
 module.exports = {
   devtool: 'cheap-module-source-map',
   entry: {
-    app: ['bootstrap', './src/app.js']
+    app: ['bootstrap', './app/index.js']
   },
   output: {
     path: path.join(__dirname, '../dist'),
-    filename: './js/[name].bundle.js'
+    filename: './js/[name].bundle.js',
+    libraryTarget: 'umd'
   },
   devServer: {
-    contentBase: './src',
+    contentBase: './app',
     publicPath: '/',
-    watchContentBase: true
+    watchContentBase: true,
+    historyApiFallback: {
+      disableDotRule: true
+    }
   },
   module: {
     rules: [
@@ -80,22 +84,14 @@ module.exports = {
     ]
   },
   plugins: [
+    new CopyWebpackPlugin([
+      { from: './app/index.html', to: 'index.html' },
+      { from: './assets/img', to: './img' }
+    ]),
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
       Tether: 'tether'
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: 'src/index.html'
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'experts.html',
-      template: 'src/experts.html'
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'faq.html',
-      template: 'src/faq.html'
     }),
     new MiniCssExtractPlugin({
       filename: isHot ? '[name].css' : '[name].[contenthash].css',
