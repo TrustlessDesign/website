@@ -1,7 +1,7 @@
 {
-  "name": "bootstrap-font-awesome-webpack-starter",
+  "name": "Trustless_Design",
   "version": "1.0.0",
-  "description": "",
+  "description": "Landing page for Trustless Design auditing services.",
   "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack/prod.config.js",
@@ -19,7 +19,10 @@
       "git add"
     ]
   },
-  "author": "Daniel Kmak",
+  "contributors": [
+    "Daniel Kmak",
+    "Logan Saether"
+  ],
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^8.5.0",
