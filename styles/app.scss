@@ -14,12 +14,16 @@ $bodyBg: #082634;
 
 body  {
   background: #ffffff;
-  padding-top: 100px;
   font-size: 14px;
   font-family: 'Raleway', sans-serif;
   color: black;
   background-color: #ececec;
   background-image: repeating-linear-gradient(45deg, transparent, transparent 39px, rgba(203, 209, 212, 0.88) 35px, rgba(255, 255, 255, 0.5) 40px);
+  padding-top: 160px;  
+
+  @include media-breakpoint-between(sm, xl) {
+    padding-top: 100px;
+  }
 }
 
 .logo {
@@ -44,14 +48,53 @@ body  {
 .header {
   position: absolute;
   background: white;
-  width: 60%;
   right: 0;
-  top: 4px;
   height: 60px;
   line-height: 60px;
-  padding-left: 6%;
   text-transform: uppercase;
   overflow: hidden;
+  width: 100%;
+  top: 65px;
+  border-bottom: 1px solid black;
+
+  @include media-breakpoint-between(sm, xl) {
+    padding-left: 6%;    
+    width: 60%;
+    top: 4px;
+    border-bottom: none;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      left: -15%;
+      top: 0;
+      bottom: 0;
+      width: 20.4%;
+      background: #082634;
+      -webkit-transform: skew(-23deg);
+      transform: skew(-23deg);
+      z-index: 10;
+      width: 19%;
+      left: -9.3%;
+      z-index: 10;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: -15%;
+      top: 0px;
+      bottom: 0;
+      width: 20.4%;
+      background: #cbd1d4;
+      -webkit-transform: skew(-23deg);
+      transform: skew(-23deg);
+      z-index: 10;
+      width: 922px;
+      left: 558px;
+      z-index: 10;
+    }
+  }  
 
   &-bar {
     top: 0px;
@@ -62,43 +105,17 @@ body  {
   }
 
   &-bar1 {
-    top: 65px;
     position: absolute;
     height: 4px;
     background: white;
     width: 100%;
-  }
+    border-bottom: 1px solid black;
+    top: 126px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: -15%;
-    top: 0;
-    bottom: 0;
-    width: 20.4%;
-    background: #082634;
-    -webkit-transform: skew(-23deg);
-    transform: skew(-23deg);
-    z-index: 10;
-    width: 19%;
-    left: -9.3%;
-    z-index: 10;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    left: -15%;
-    top: 0px;
-    bottom: 0;
-    width: 20.4%;
-    background: #cbd1d4;
-    -webkit-transform: skew(-23deg);
-    transform: skew(-23deg);
-    z-index: 10;
-    width: 922px;
-    left: 558px;
-    z-index: 10;
+    @include media-breakpoint-between(sm, xl) {
+      border-bottom: none;
+      top: 65px;    
+    }
   }
 
   ul {
@@ -107,14 +124,24 @@ body  {
     list-style: none;
     height: 80px;
     overflow: hidden;
-    padding-left: 5rem;
     font-size: 14px;
+    padding-left: 0;
+    
+
+    @include media-breakpoint-between(sm, xl) {
+      padding-left: 5rem;    
+    }
+    
 
     li {
       display: inline-block;
       color: black;
       z-index: 2;
-      min-width: 100px;
+
+      @include media-breakpoint-between(sm, xl) {
+        min-width: 100px;
+      }
+      
 
       a {
         font-size: 1.5rem;
@@ -133,7 +160,6 @@ body  {
 }
 
 .tlogo {
-  right: 57%;
   color: white;
   z-index: 10;
   position: absolute;
@@ -141,6 +167,12 @@ body  {
   font-weight: bold;
   text-shadow: #00000059 2px 4px 10px;
   z-index: 12;
+  left: calc(50% - 68px);
+
+  @include media-breakpoint-between(sm, xl) {
+    right: 57%;  
+    left: auto;
+  }
 
   &:hover {
     color: white;

@@ -11,7 +11,7 @@ export default function Header() {
         </Link>
 
         <div className="header">
-          <ul>
+          <ul className="d-flex d-sm-block justify-content-center">
             <li>
               <Link to="/">SERVICES</Link>
             </li>
