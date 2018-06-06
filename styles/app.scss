@@ -5,7 +5,7 @@ $body-color: white;
 // $navbar-light-color: yellow;
 $navbar-dark-color: purple;
 
-@import '../node_modules/bootstrap/scss/bootstrap';
+@import 'bootstrap';
 @import '../node_modules/font-awesome/css/font-awesome.css';
 
 @import './footer';
@@ -19,7 +19,7 @@ body  {
   color: black;
   background-color: #ececec;
   background-image: repeating-linear-gradient(45deg, transparent, transparent 39px, rgba(203, 209, 212, 0.88) 35px, rgba(255, 255, 255, 0.5) 40px);
-  padding-top: 160px;  
+  padding-top: 160px;
 
   @include media-breakpoint-between(sm, xl) {
     padding-top: 100px;
@@ -58,11 +58,11 @@ body  {
   border-bottom: 1px solid black;
 
   @include media-breakpoint-between(sm, xl) {
-    padding-left: 6%;    
+    padding-left: 6%;
     width: 60%;
     top: 4px;
     border-bottom: none;
-    
+
     &::before {
       content: "";
       position: absolute;
@@ -94,7 +94,7 @@ body  {
       left: 558px;
       z-index: 10;
     }
-  }  
+  }
 
   &-bar {
     top: 0px;
@@ -114,7 +114,7 @@ body  {
 
     @include media-breakpoint-between(sm, xl) {
       border-bottom: none;
-      top: 65px;    
+      top: 65px;
     }
   }
 
@@ -126,12 +126,12 @@ body  {
     overflow: hidden;
     font-size: 14px;
     padding-left: 0;
-    
+
 
     @include media-breakpoint-between(sm, xl) {
-      padding-left: 5rem;    
+      padding-left: 5rem;
     }
-    
+
 
     li {
       display: inline-block;
@@ -141,7 +141,7 @@ body  {
       @include media-breakpoint-between(sm, xl) {
         min-width: 100px;
       }
-      
+
 
       a {
         font-size: 1.5rem;
@@ -170,7 +170,7 @@ body  {
   left: calc(50% - 68px);
 
   @include media-breakpoint-between(sm, xl) {
-    right: 57%;  
+    right: 57%;
     left: auto;
   }
 
@@ -365,6 +365,33 @@ body  {
     }
   }
 
+  &-button-clicked-message {
+    background: #0f2732;
+    padding: 10px;
+    border: 1px solid #132731;
+    position: absolute;
+    top: -90px;
+    color: white;
+    max-width: 100%;
+    width: 480px;
+    margin: auto;
+    left: 0;
+    right: 0;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: #0f2732;
+      left: calc(50% - 10px);
+      border-bottom: 2px solid white;
+      border-left: 2px solid white;
+      transform: rotate(-45deg);
+      margin-top: 2px;
+    }
+  }
 }
 
 .btn {

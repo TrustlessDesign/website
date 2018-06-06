@@ -8,7 +8,7 @@ const isHot = path.basename(require.main.filename) === 'webpack-dev-server.js';
 module.exports = {
   devtool: 'cheap-module-source-map',
   entry: {
-    app: ['bootstrap', './app/index.js']
+    app: ['./app/index.js']
   },
   output: {
     path: path.join(__dirname, '../dist'),

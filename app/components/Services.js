@@ -53,7 +53,31 @@ export default function Services() {
 
       <div className="row quote-row">
         <div className="col text-center">
-          <button className="btn btn-primary">GET QUOTE</button>
+          <div className="quote-button-clicked-message hidden">
+            Send mail to{' '}
+            <b>
+              <a href="mailto:audit@trustless.design" style={{ color: 'white' }}>
+                audit@trustless.design
+              </a>
+            </b>{' '}
+            with information about your project so we can assess the compensation for the audit.
+          </div>
+          <a
+            href="mailto:audit@trustless.design"
+            className="btn btn-primary"
+            onMouseOver={() =>
+              document
+                .getElementsByClassName('quote-button-clicked-message')[0]
+                .classList.remove('hidden')
+            }
+            onMouseOut={() =>
+              document
+                .getElementsByClassName('quote-button-clicked-message')[0]
+                .classList.add('hidden')
+            }
+          >
+            GET QUOTE
+          </a>
           <br />
           <div className="quote-message">
             We will get back to you within&nbsp;<i>3 days</i> with the price.
