@@ -14,6 +14,16 @@ export default function App() {
         <Route path="/experts" component={Experts} />
         <Route path="/faq" component={Faq} />
       </Switch>
+      <footer className="d-flex flex-column justify-content-center main-footer text-center">
+        <div>
+          All rights reserved. Trustless Design.
+          <br />
+          <br />
+          <a href="#">
+            <i className="fa fa-twitter" rel="noopener noreferrer" />
+          </a>
+        </div>
+      </footer>
     </Fragment>
   );
 }
