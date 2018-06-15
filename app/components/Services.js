@@ -60,7 +60,7 @@ export default function Services() {
                 audit@trustless.design
               </a>
             </b>{' '}
-            with information about your project so we can assess the compensation for the audit.
+            with information about your project and we will get back to you as soon as possible.
           </div>
           <a
             href="mailto:audit@trustless.design"
@@ -80,7 +80,7 @@ export default function Services() {
           </a>
           <br />
           <div className="quote-message">
-            We will get back to you within&nbsp;<i>3 days</i> with the price.
+            We aim to respond in no longer than&nbsp;<i>3 days</i>.
           </div>
         </div>
       </div>
