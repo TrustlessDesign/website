@@ -19,8 +19,8 @@ export default function App() {
           All rights reserved. Trustless Design.
           <br />
           <br />
-          <a href="#">
-            <i className="fa fa-twitter" rel="noopener noreferrer" />
+          <a href="https://twitter.com/trustlessdesign" rel="noopener noreferrer" target="_blank">
+            <i className="fa fa-twitter" />
           </a>
         </div>
       </footer>
