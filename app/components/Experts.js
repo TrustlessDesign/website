@@ -28,6 +28,10 @@ export default function Experts() {
                 <a href="https://github.com/lsaether" target="_blank" rel="noopener noreferrer">
                   <i className="fa fa-github" />
                 </a>
+                <br />
+                <a href="https://twitter.com/7saether" target="_blank" rel="noopener noreferrer">
+                  <i className="fa fa-twitter" />
+                </a>
               </div>
             </div>
             <div className="author-text mt-4">LOGAN SAETHER</div>
@@ -63,6 +67,14 @@ export default function Experts() {
                 <br />
                 <a href="https://github.com/Kuzirashi" target="_blank" rel="noopener noreferrer">
                   <i className="fa fa-github" />
+                </a>
+                <br />
+                <a
+                  href="https://twitter.com/danielkmakcom"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fa fa-twitter" />
                 </a>
               </div>
             </div>

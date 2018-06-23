@@ -22,6 +22,14 @@ export default function App() {
           <a href="https://twitter.com/trustlessdesign" rel="noopener noreferrer" target="_blank">
             <i className="fa fa-twitter" />
           </a>
+          &nbsp;&nbsp;
+          <a
+            href="https://www.linkedin.com/company/trustlessdesign/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <i className="fa fa-linkedin" />
+          </a>
         </div>
       </footer>
     </Fragment>

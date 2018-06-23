@@ -24,25 +24,6 @@ body  {
   }
 }
 
-.logo {
-  position: absolute;
-  margin: auto;
-  left: calc(50% - 50px);
-
-  &-image {
-    width: 100px;
-    height: 124px;
-    filter: invert(1);
-    background-size: contain;
-  }
-
-  &-text {
-    position: absolute;
-    width: 120px;
-    top: 130px;
-  }
-}
-
 .header {
   position: absolute;
   background: white;
@@ -165,7 +146,10 @@ body  {
   font-weight: bold;
   text-shadow: #00000059 2px 4px 10px;
   z-index: 12;
-  left: calc(50% - 68px);
+  width: 180px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
 
   @include media-breakpoint-between(sm, xl) {
     right: 57%;
@@ -485,4 +469,18 @@ body  {
   border-top: 1px solid white;
   color: #082534;
   text-shadow: #ececeb 1px 1px 1px;
+}
+
+.logo {
+  background: url('../assets/img/logo-small.png');
+  width: 30px;
+  height: 24px;
+  background-size: 100%;
+  display: inline-block;
+
+  &-text {
+    display: inline-block;
+    padding-left: 10px;
+    vertical-align: top;
+  }
 }

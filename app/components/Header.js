@@ -7,7 +7,8 @@ export default function Header() {
       <div className="header-bar" />
       <div className="header-wrapper">
         <Link to="/" className="tlogo">
-          TRUSTLESS::DESIGN
+          <div className="logo" />
+          <div className="logo-text">TRUSTLESS::DESIGN</div>
         </Link>
 
         <div className="header">
