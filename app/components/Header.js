@@ -1,26 +1,25 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
     <React.Fragment>
-      <div className="header-bar" />
+      <div className="header-bar" id="services" />
       <div className="header-wrapper">
-        <Link to="/" className="tlogo">
+        <a href="#" className="tlogo">
           <div className="logo" />
           <div className="logo-text">TRUSTLESS::DESIGN</div>
-        </Link>
+        </a>
 
         <div className="header">
           <ul className="d-flex d-sm-block justify-content-center">
             <li>
-              <Link to="/">SERVICES</Link>
+              <a href="#services">SERVICES</a>
             </li>
             <li>
-              <Link to="experts">EXPERTS</Link>
+              <a href="#experts">EXPERTS</a>
             </li>
             <li>
-              <Link to="faq">FAQ</Link>
+              <a href="#faq">FAQ</a>
             </li>
           </ul>
         </div>

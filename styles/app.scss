@@ -11,12 +11,10 @@ $navbar-dark-color: purple;
 $bodyBg: #082634;
 
 body  {
-  background: #ffffff;
+  background: black;
   font-size: 14px;
   font-family: 'Raleway', sans-serif;
-  color: black;
-  background-color: #ececec;
-  background-image: repeating-linear-gradient(45deg, transparent, transparent 39px, rgba(203, 209, 212, 0.88) 35px, rgba(255, 255, 255, 0.5) 40px);
+  color: #9e9e9e;
   padding-top: 160px;
 
   @include media-breakpoint-between(sm, xl) {
@@ -26,7 +24,7 @@ body  {
 
 .header {
   position: absolute;
-  background: white;
+  background: black;
   right: 0;
   height: 60px;
   line-height: 60px;
@@ -35,6 +33,7 @@ body  {
   width: 100%;
   top: 65px;
   border-bottom: 1px solid black;
+  color: white;
 
   @include media-breakpoint-between(sm, xl) {
     padding-left: 6%;
@@ -49,7 +48,7 @@ body  {
       top: 0;
       bottom: 0;
       width: 20.4%;
-      background: #082634;
+      background: #000000;
       -webkit-transform: skew(-23deg);
       transform: skew(-23deg);
       z-index: 10;
@@ -65,7 +64,7 @@ body  {
       top: 0px;
       bottom: 0;
       width: 20.4%;
-      background: #cbd1d4;
+      background: #000000;
       -webkit-transform: skew(-23deg);
       transform: skew(-23deg);
       z-index: 10;
@@ -79,14 +78,14 @@ body  {
     top: 0px;
     position: absolute;
     height: 70px;
-    background: #082634;
+    background: #000000;
     width: 100%;
   }
 
   &-bar1 {
     position: absolute;
-    height: 4px;
-    background: white;
+    height: 1px;
+    background: #00eeff;
     width: 100%;
     border-bottom: 1px solid black;
     top: 126px;
@@ -111,7 +110,6 @@ body  {
       padding-left: 5rem;
     }
 
-
     li {
       display: inline-block;
       color: black;
@@ -130,7 +128,7 @@ body  {
         z-index: 1;
         text-transform: uppercase;
         transition: color 0.2s ease-out 0.1s;
-        color: black;
+        color: white;
         padding-top: 0;
         font-size: 14px;
       }
@@ -146,7 +144,8 @@ body  {
   font-weight: bold;
   text-shadow: #00000059 2px 4px 10px;
   z-index: 12;
-  width: 180px;
+  // width: 180px;
+  text-align: center;
   margin: 0 auto;
   left: 0;
   right: 0;
@@ -161,31 +160,50 @@ body  {
   }
 }
 
+.white {
+  color: white;
+}
+
 .hidden {
   display: none;
 }
 
 .main-section {
-  margin-top: 40px;
+  margin-top: 100px;
+}
+
+.h1-head {
+  background: #00000061;
+  border-bottom: 1px solid #00eeff;
+
+  &-first {
+    /* color: rgb(0, 238, 255); */
+    color: white;
+    /* text-shadow: #ffffff 3px 1px 1px; */
+    font-weight: 100;
+  }
+
+  &-second {
+    font-weight: 100;
+    color: white;
+  }
 }
 
 .logan {
   background: url('../assets/img/logan1.jpg');
   background-size: 156%;
   background-position-y: -41px;
-  border-radius: 50%;
   background-position-x: -75px;
   box-shadow: #0000001a 0px 10px 10px 4px;
-  filter: grayscale(1);
+  border-bottom: 1px solid #00e5f6;
 }
 
 .daniel {
   background: url('../assets/img/daniel2.png');
   background-size: 180px;
   background-position-y: 0px;
-  border-radius: 50%;
   box-shadow: #0000001a 0px 10px 10px 4px;
-  filter: grayscale(1);
+  border-bottom: 1px solid #00e5f6;
 }
 
 .author {
@@ -203,11 +221,16 @@ body  {
     }
   }
 
+  &-description {
+    color: #9e9e9e;
+    text-transform: uppercase;
+  }
+
   &-text {
     margin-top: 210px;
     text-shadow: #00000059 2px 4px 10px;
     letter-spacing: 2px;
-    color: #4e4e4e;
+    color: #00eeff;
   }
 
   &-wrapper {
@@ -320,7 +343,7 @@ body  {
   &-feature {
     font-size: 24px;
     text-align: center;
-    color: #082634;
+    color: white;
 
     &-text {
       margin-top: 20px;
@@ -339,7 +362,7 @@ body  {
   &-extra {
     font-size: 14px;
     text-align: center;
-    color: #082634;
+    color: #9e9e9e;
   }
 }
 
@@ -354,12 +377,10 @@ body  {
     width: 88vw;
     position: absolute;
     left: calc(50% - 44vw);
-    color: #4a5e6b;
+    color: #ffffff;
     padding: 10px 10px;
     font-weight: 400;
     border: 1px solid #4a5e6b21;
-    background: #ececec;
-
 
     @include media-breakpoint-between(md, xl) {
       width: 370px;
@@ -368,17 +389,18 @@ body  {
   }
 
   &-button-clicked-message {
-    background: #0f2732;
+    background: black;
     padding: 10px;
-    border: 1px solid #132731;
+    border: 1px solid #00eeff;
     position: absolute;
     top: -90px;
     color: white;
     max-width: 100%;
-    width: 480px;
+    width: 540px;
     margin: auto;
     left: 0;
     right: 0;
+    text-transform: uppercase;
 
     &::after {
       content: '';
@@ -386,10 +408,10 @@ body  {
       position: absolute;
       width: 20px;
       height: 20px;
-      background: #0f2732;
+      background: #000000;
       left: calc(50% - 10px);
-      border-bottom: 2px solid white;
-      border-left: 2px solid white;
+      border-bottom: 2px solid #00eeff;
+      border-left: 2px solid #00eeff;
       transform: rotate(-45deg);
       margin-top: 2px;
     }
@@ -402,18 +424,25 @@ body  {
   word-wrap: break-word;
   font-size: .8rem;
   cursor: pointer;
-  transition: .2s ease-out;
+  transition: background-color .1s ease-out;
+  // transition: none;
   border-radius: 10em;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
 
   &-primary {
     font-size: 24px;
-    color: #d8d8d8;
+    color: black;
     border: 0;
-    background: linear-gradient(0deg, #2b2b2b 0, #082634 100%);
+    background: #00eeff;
     padding: 20px 40px;
     font-weight: 400;
     border-radius: 0em;
+
+    &:hover {
+      background: black;
+      color: #00eeff;
+      border: 1px solid;
+    }
   }
 }
 
@@ -432,18 +461,18 @@ body  {
   &-question {
     font-size: 24px;
     text-align: center;
-    color: #082634;
     margin-left: 72px;
     margin-right: 72px;
+    color: #00eeff;
   }
 
   &-answer {
     font-size: 14px;
     text-align: center;
-    color: #082634;
     margin-left: 72px;
     margin-right: 72px;
     margin-bottom: 24px;
+    color: white;
   }
 }
 
@@ -455,32 +484,104 @@ body  {
   }
 
   &-description {
-    color: #747474;
-    width: 400px;
-    display: inline-block;
-    max-width: 100%;
+    color: #00eeff;
+    text-transform: uppercase;
+
+    &:hover {
+      color: white;
+    }
+
+    &-meta {
+      color: #9e9e9e;
+    }
   }
 }
 
 .main-footer {
   margin-top: 50px;
-  background: #cbd1d4;
+  background: #000000;
   height: 170px;
   border-top: 1px solid white;
-  color: #082534;
-  text-shadow: #ececeb 1px 1px 1px;
+  color: #ffffff;
+  text-shadow: #8eecf3 1px 1px 1px;
+  bottom: 0;
+  width: 100%;
+}
+
+.color-blue {
+  color: rgb(0, 238, 255);
 }
 
 .logo {
-  background: url('../assets/img/logo-small.png');
-  width: 30px;
+  // background: url('../assets/img/logo-small.png');
+  // width: 30px;
   height: 24px;
   background-size: 100%;
   display: inline-block;
 
   &-text {
     display: inline-block;
-    padding-left: 10px;
+    // padding-left: 10px;
     vertical-align: top;
   }
+}
+
+.xxx {
+  background: url('../assets/img/diamond.jpg');
+  width: 100%;
+  max-height: 1080px;
+  top: 0;
+  opacity: 0.4;
+  height: 100vw;
+  filter: grayscale(0.3);
+  z-index: -1;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @include media-breakpoint-between(sm, xl) {
+    height: 100vh;
+  }
+
+  @include media-breakpoint-between(xl, xl) {
+    background-size: cover;
+    background-position-y: -140px;
+  }
+}
+
+.headline {
+  font-size: 2.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+
+  @include media-breakpoint-between(sm, xl) {
+    position: absolute;
+  }
+}
+
+.experts {
+  margin-top: 100px;
+}
+
+.services {
+  margin-top: 100px;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-top: #2d2d2d 1px solid;
+}
+
+.margin-top-100px {
+  margin-top: 100px;
+}
+
+.bottom-border-style {
+  font-weight: 100;
+  background: rgba(0, 0, 0, 0.38);
+  border-bottom: 1px solid rgb(0, 238, 255);
+  font-size: 2.5rem;
 }

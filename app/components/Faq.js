@@ -2,13 +2,10 @@ import React from 'react';
 
 export default function Faq() {
   return (
-    <div className="container main-section">
+    <div className="container main-section" id="faq">
       <div className="row pb-5">
         <div className="col text-center">
-          <h1>
-            <span style={{ color: '#082634' }}>KNOWLEDGE</span>{' '}
-            <span style={{ fontWeight: 100 }}>BASE</span>
-          </h1>
+          <span className="white bottom-border-style">KNOWLEDGE BASE</span>
         </div>
       </div>
 

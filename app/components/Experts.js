@@ -2,12 +2,14 @@ import React from 'react';
 
 export default function Experts() {
   return (
-    <div className="container main-section">
+    <div className="container main-section experts" id="experts">
       <div className="row pb-5">
         <div className="col text-center">
           <h1>
-            <span style={{ fontWeight: 100 }}>MEET OUR</span>
-            <span style={{ color: '#082634' }}> EXPERTS</span>
+            <span className="white" style={{ fontWeight: 100 }}>
+              MEET OUR
+            </span>
+            <span className="color-blue"> EXPERTS</span>
           </h1>
         </div>
       </div>
@@ -93,16 +95,19 @@ export default function Experts() {
       <div className="row mt-5">
         <div className="col text-center mt-3">
           <div>
-            <img src="img/team1.jpg" className="team-photo" />
-            <br />
-            <br />
-            <span className="team-description">
-              Logan and Daniel together have won{' '}
-              <b>Melonport Blockchain Hackathon &quot;Reinvent Finance&quot; Grand Prize</b>.
-            </span>
+            <a
+              href="https://blog.chronologic.network/chronologic-developers-win-melonport-hackathon-in-switzerland-224e6d3fbd8b"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="team-description"
+            >
+              Melonport Blockchain Hackathon &quot;Reinvent Finance&quot; Grand Prize winners.
+              <span className="team-description-meta">- Switzerland, Zug. 2018.</span>
+            </a>
           </div>
         </div>
       </div>
+      <hr className="margin-top-100px" />
     </div>
   );
 }
