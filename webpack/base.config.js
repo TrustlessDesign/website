@@ -3,7 +3,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-const isHot = path.basename(require.main.filename) === 'webpack-dev-server.js';
+// const isHot = path.basename(require.main.filename) === 'webpack-dev-server.js';
 
 module.exports = {
   devtool: 'cheap-module-source-map',
@@ -94,7 +94,7 @@ module.exports = {
       Tether: 'tether'
     }),
     new MiniCssExtractPlugin({
-      filename: isHot ? '[name].css' : '[name].[contenthash].css',
+      filename: '[name].css', //isHot ? '[name].css' : '[name].[contenthash].css',
       chunkFilename: '[id].css'
     })
   ]
