@@ -1,4 +1,5 @@
 import React from 'react';
+import GetQuoteButton from './GetQuoteButton';
 
 export default function Services() {
   return (
@@ -53,39 +54,7 @@ export default function Services() {
           </div>
         </div>
 
-        <div className="row quote-row">
-          <div className="col text-center">
-            <div className="quote-button-clicked-message hidden">
-              Send mail to{' '}
-              <b>
-                <a href="mailto:audit@trustless.design" style={{ color: 'white' }}>
-                  audit@trustless.design
-                </a>
-              </b>{' '}
-              with information about your project and we will get back to you as soon as possible.
-            </div>
-            <a
-              href="mailto:audit@trustless.design"
-              className="btn btn-primary"
-              onMouseOver={() =>
-                document
-                  .getElementsByClassName('quote-button-clicked-message')[0]
-                  .classList.remove('hidden')
-              }
-              onMouseOut={() =>
-                document
-                  .getElementsByClassName('quote-button-clicked-message')[0]
-                  .classList.add('hidden')
-              }
-            >
-              GET QUOTE
-            </a>
-            <br />
-            <div className="quote-message">
-              We aim to respond in no longer than&nbsp;<i>3 days</i>.
-            </div>
-          </div>
-        </div>
+        <GetQuoteButton />
         <hr className="margin-top-100px" />
       </div>
     </div>

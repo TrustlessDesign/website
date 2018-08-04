@@ -86,7 +86,7 @@ module.exports = {
   plugins: [
     new CopyWebpackPlugin([
       { from: './app/index.html', to: 'index.html' },
-      { from: './assets/img', to: './img' }
+      { from: './assets', to: './' }
     ]),
     new webpack.ProvidePlugin({
       $: 'jquery',

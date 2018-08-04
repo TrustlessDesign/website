@@ -393,10 +393,10 @@ body  {
     padding: 10px;
     border: 1px solid #00eeff;
     position: absolute;
-    top: -90px;
+    top: -70px;
     color: white;
     max-width: 100%;
-    width: 540px;
+    width: 300px;
     margin: auto;
     left: 0;
     right: 0;
@@ -437,6 +437,10 @@ body  {
     padding: 20px 40px;
     font-weight: 400;
     border-radius: 0em;
+
+    &-sm-padding {
+      padding: 20px 20px;
+    }
 
     &:hover {
       background: black;
@@ -584,4 +588,31 @@ hr {
   background: rgba(0, 0, 0, 0.38);
   border-bottom: 1px solid rgb(0, 238, 255);
   font-size: 2.5rem;
+}
+
+.contact-options {
+  margin: 0 auto;
+
+  @include media-breakpoint-between(sm, xl) {
+    height: 76px;
+    display: flex;
+    width: 440px;
+    justify-content: space-between;
+  }
+
+  .btn-primary {
+    width: 60%;
+
+    + .btn-primary {
+      margin-top: 20px;
+
+      @include media-breakpoint-between(sm, xl) {
+        margin-top: 0;
+      }
+    }
+
+    @include media-breakpoint-between(sm, xl) {
+      width: 210px;
+    }
+  }
 }
