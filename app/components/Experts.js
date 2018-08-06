@@ -96,13 +96,43 @@ export default function Experts() {
         <div className="col text-center mt-3">
           <div>
             <a
+              href="https://blog.chronologic.network/chronologic-developer-logan-saether-presents-at-dappcon-in-berlin-d2e69570254f"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="team-description"
+            >
+              Logan Saether speaks at Dappcon Berlin.
+              <span className="team-description-meta">- Berlin, Germany. July, 2018.</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col text-center mt-3">
+          <div>
+            <a
+              href="https://youtu.be/rK20a1UQN_A"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="team-description"
+            >
+              Logan Saether at EDCON about smart-contract engineering.
+              <span className="team-description-meta">- Toronto, Canada. June, 2018.</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col text-center mt-3">
+          <div>
+            <a
               href="https://blog.chronologic.network/chronologic-developers-win-melonport-hackathon-in-switzerland-224e6d3fbd8b"
               target="_blank"
               rel="noopener noreferrer"
               className="team-description"
             >
               Melonport Blockchain Hackathon &quot;Reinvent Finance&quot; Grand Prize winners.
-              <span className="team-description-meta">- Switzerland, Zug. 2018.</span>
+              <span className="team-description-meta">- Zug, Switzerland. May, 2018.</span>
             </a>
           </div>
         </div>
