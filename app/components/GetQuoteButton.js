@@ -15,10 +15,12 @@ export default class GetQuoteButton extends Component {
                 href="mailto:audit@trustless.design"
                 className="btn btn-primary btn-primary-sm-padding"
               >
-                MAIL
+                <i className="fa fa-envelope" />
+                &nbsp; MAIL
               </a>
               <a href="https://t.me/danielkmak" className="btn btn-primary btn-primary-sm-padding">
-                TELEGRAM
+                <i className="fa fa-telegram" />
+                &nbsp; TELEGRAM
               </a>
             </div>
           ) : (
@@ -51,7 +53,8 @@ export default class GetQuoteButton extends Component {
 
           <br />
           <div className="quote-message">
-            We aim to respond in no longer than&nbsp;<i>3 days</i>.
+            We aim to respond in no longer than&nbsp;
+            <i>3 days</i>.
           </div>
         </div>
       </div>

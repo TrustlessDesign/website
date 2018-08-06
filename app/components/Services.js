@@ -7,9 +7,8 @@ export default function Services() {
       <div className="xxx" />
 
       <div className="headline">
-        <span className="h1-head">
-          <span className="h1-head-first">SECURITY AUDITS</span>&nbsp;
-          <span className="h1-head-second">FOR SMART CONTRACTS</span>
+        <span className="h1-head glitch" data-text="SECURITY AUDITS FOR SMART CONTRACTS">
+          SECURITY AUDITS&nbsp;FOR SMART CONTRACTS
         </span>
       </div>
 
@@ -17,7 +16,7 @@ export default function Services() {
         <div className="row mt-3">
           <div className="col-md-4">
             <div className="audit-feature">
-              <i className="fa fa-check-square" aria-hidden="true" />
+              <i className="fa fa-check" aria-hidden="true" />
               <br />
               <div className="audit-feature-text">FULL COMPREHENSIVE REVIEW</div>
               <div className="audit-extra mt-2">
@@ -30,7 +29,7 @@ export default function Services() {
 
           <div className="col-md-4 mt-4 mt-md-0">
             <div className="audit-feature">
-              <i className="fa fa-envelope" aria-hidden="true" />
+              <i className="fa fa-send" aria-hidden="true" />
               <br />
               <div className="audit-feature-text">FREQUENT UPDATES DURING THE PROCESS</div>
               <div className="audit-extra mt-2">

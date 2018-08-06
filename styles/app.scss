@@ -172,34 +172,115 @@ body  {
   margin-top: 100px;
 }
 
-.h1-head {
-  background: #00000061;
-  border-bottom: 1px solid #00eeff;
-
-  &-first {
-    /* color: rgb(0, 238, 255); */
-    color: white;
-    /* text-shadow: #ffffff 3px 1px 1px; */
-    font-weight: 100;
-  }
-
-  &-second {
-    font-weight: 100;
-    color: white;
+@keyframes noise-anim{
+  $steps:20;
+  @for $i from 0 through $steps{
+    #{percentage($i*(1/$steps))}{
+      clip:rect(random(100)+px,9999px,random(300)+px,0);
+    }
   }
 }
 
+@keyframes noise-anim-2{
+  $steps:20;
+  @for $i from 0 through $steps{
+    #{percentage($i*(1/$steps))}{
+      clip:rect(random(100)+px,9999px,random(300)+px,0);
+    }
+  }
+}
+//clip:rect(random(100)+px,9999px,random(100)+px,0);
+//
+.glitch {
+  color: white;
+  position: relative;
+  // width: 470px;
+  margin: 0 auto;
+  font-weight: 100;
+  background: #00000061;
+  text-shadow: 1px 0 #00eeff;
+  display: block;
+  max-width: 250px;
+
+  @media screen and (min-width: 446px) {
+    max-width: 830px
+  }
+
+  &::before {
+    content: attr(data-text);
+    position: absolute;
+    left: -2px;
+    text-shadow: 1px 0 #00eeff;
+    top: 0px;
+    color: #ffffff;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    opacity: 0.5;
+    width: calc(100% + 9px);
+
+    @include media-breakpoint-between(md, xl) {
+      animation: noise-anim-2 3s infinite linear alternate-reverse;
+    }
+  }
+
+  &::after {
+    content: attr(data-text);
+    position: absolute;
+    text-shadow: -1px 0 #ffffff;
+    top: 0px;
+    color: #ffffff;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    opacity: 0.5;
+    width: calc(100% + 8px);
+    left: -1px;
+
+    @include media-breakpoint-between(md, xl) {
+      left: -5px;
+      width: calc(100% + 9px);
+    }
+
+    @include media-breakpoint-between(md, xl) {
+      animation: noise-anim 2s infinite linear alternate-reverse;
+    }
+  }
+
+  // &::before, &::after {
+  //   width: calc(100% + 170px);
+
+  //   @include media-breakpoint-between(md, xl) {
+  //     width: calc(100% + 1px);
+  //   }
+  // }
+
+  // &::before, &::after {
+  //   width: calc(100% + 24px);
+
+  //   @include media-breakpoint-between(sm, md) {
+  //     width: calc(100% + 171px);
+  //   }
+
+  //   @include media-breakpoint-between(lg, xl) {
+  //     width: calc(100% + 1px);
+  //   }
+  // }
+
+  // &::before, &::after {
+  //   width: calc(100% + 2px);
+  // }
+}
+
 .logan {
-  background: url('../assets/img/logan1.jpg');
-  background-size: 156%;
-  background-position-y: -41px;
-  background-position-x: -75px;
+  background: url('../assets/img/logan.jpg');
+  background-size: 130%;
+  background-position-y: -19px;
+  background-position-x: -48px;
   box-shadow: #0000001a 0px 10px 10px 4px;
   border-bottom: 1px solid #00e5f6;
 }
 
 .daniel {
-  background: url('../assets/img/daniel2.png');
+  background: url('../assets/img/daniel.jpg');
   background-size: 180px;
   background-position-y: 0px;
   box-shadow: #0000001a 0px 10px 10px 4px;
@@ -613,6 +694,14 @@ hr {
 
     @include media-breakpoint-between(sm, xl) {
       width: 210px;
+    }
+  }
+}
+
+footer {
+  a {
+    &:hover {
+      color: white;
     }
   }
 }

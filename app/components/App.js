@@ -22,6 +22,7 @@ export default function App() {
             rel="noopener noreferrer"
             target="_blank"
             className="white"
+            title="Twitter"
           >
             <i className="fa fa-twitter" />
           </a>
@@ -31,6 +32,7 @@ export default function App() {
             rel="noopener noreferrer"
             target="_blank"
             className="white"
+            title="LinkedIn"
           >
             <i className="fa fa-linkedin" />
           </a>
