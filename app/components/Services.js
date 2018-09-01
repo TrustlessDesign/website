@@ -7,8 +7,8 @@ export default function Services() {
       <div className="xxx" />
 
       <div className="headline">
-        <span className="h1-head glitch" data-text="SECURITY AUDITS FOR SMART CONTRACTS">
-          SECURITY AUDITS&nbsp;FOR SMART CONTRACTS
+        <span className="h1-head glitch">
+          SMART CONTRACT SECURITY
         </span>
       </div>
 

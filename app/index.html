@@ -10,12 +10,21 @@
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <meta charset="utf-8" />
 
-  <link href="https://fonts.googleapis.com/css?family=Raleway:100, 100i, 400, 400i" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Raleway:100, 100i, 400, 400i" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
   <link href="/app.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <div id="root"></div>
+  <div id="particles-js"></div>
+    <div id="root"></div>
+
+  <script src="./particles.js"></script>
+  <script>
+    particlesJS.load('particles-js', './particles.json', function() {
+      console.log('callback - particles.js config loaded');
+    });
+  </script>
 
   <script src="/js/app.bundle.js"></script>
 </body>
