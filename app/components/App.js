@@ -3,6 +3,7 @@ import Header from './Header';
 import Services from './Services';
 import Experts from './Experts';
 import Faq from './Faq';
+import Clients from './Clients';
 
 export default function App() {
   return (
@@ -11,7 +12,9 @@ export default function App() {
 
       <Services />
       <Experts />
+      <Clients />
       <Faq />
+
       <footer className="d-flex flex-column justify-content-center main-footer text-center">
         <div>
           All rights reserved. Trustless Design.
@@ -25,6 +28,16 @@ export default function App() {
             title="Twitter"
           >
             <i className="fa fa-twitter" />
+          </a>
+          &nbsp;&nbsp;
+          <a
+            href="https://medium.com/trustless-design"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="white"
+            title="Medium"
+          >
+            <i className="fa fa-medium" />
           </a>
           &nbsp;&nbsp;
           <a
