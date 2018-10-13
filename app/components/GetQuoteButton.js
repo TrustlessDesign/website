@@ -53,8 +53,8 @@ export default class GetQuoteButton extends Component {
 
           <br />
           <div className="quote-message">
-            We aim to respond in no longer than&nbsp;
-            <i>3 days</i>.
+            We will respond in&nbsp;
+            <span style={{ fontWeight: 'bold' }}>less than 24 hours</span>.
           </div>
         </div>
       </div>

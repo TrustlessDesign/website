@@ -2,16 +2,13 @@ import React from 'react';
 
 export default function Clients() {
   return (
-    <div className="container main-section">
+    <div className="container main-section" id="clients">
       <div className="row pb-5">
         <div className="col text-center">
           <h1>
-            <span className="white" style={{ fontWeight: 100 }}>
-              OUR
-            </span>
             <span className="color-blue"> AUDITS </span>
             <span className="white" style={{ fontWeight: 100 }}>
-              AND
+              &
             </span>
             <span className="color-blue"> PARTNERS</span>
           </h1>
