@@ -52,6 +52,7 @@ module.exports = withCSS(
         return pathMap;
       }
 
+      await copyFile(join(dir, '.nojekyll'), join(outDir, '.nojekyll'));
       await copyFile(join(dir, 'CNAME'), join(outDir, 'CNAME'));
       await copyFile(
         join(dir, 'google907c0d9d98a134c7.html'),
