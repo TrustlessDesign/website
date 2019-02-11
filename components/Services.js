@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
 import GetQuoteButton from './GetQuoteButton';
-import $ from 'jquery';
 
 export default class Services extends Component {
   componentDidMount() {
+    if (typeof window === 'undefined') {
+      return;
+    }
+
+    require('../vendor/morhpext/morphext');
+
+    const $ = require('jquery');
+
     $('#test').Morphext({
       // The [in] animation type. Refer to Animate.css for a list of available animations.
       animation: 'fadeIn',
@@ -34,7 +41,7 @@ export default class Services extends Component {
           <div className="row mt-3">
             <div className="col-md-4">
               <div className="audit-feature">
-                <i className="fa fa-check" aria-hidden="true" />
+                <i className="fas fa-check fa-lg" aria-hidden="true" />
                 <br />
                 <div className="audit-feature-text">FULL COMPREHENSIVE REVIEW</div>
                 <div className="audit-extra mt-2">
@@ -47,7 +54,7 @@ export default class Services extends Component {
 
             <div className="col-md-4 mt-4 mt-md-0">
               <div className="audit-feature">
-                <i className="fa fa-send" aria-hidden="true" />
+                <i className="fab fa-telegram-plane fa-lg" aria-hidden="true" />
                 <br />
                 <div className="audit-feature-text">FREQUENT UPDATES DURING THE PROCESS</div>
                 <div className="audit-extra mt-2">
@@ -59,7 +66,7 @@ export default class Services extends Component {
 
             <div className="col-md-4 mt-4 mt-md-0">
               <div className="audit-feature">
-                <i className="fa fa-cogs" />
+                <i className="fas fa-cogs fa-lg" />
                 <br />
                 <div className="audit-feature-text">ACTIONABLE FEEDBACK AND REPORTS</div>
                 <div className="audit-extra mt-2">

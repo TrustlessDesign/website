@@ -15,11 +15,11 @@ export default class GetQuoteButton extends Component {
                 href="mailto:audit@trustless.design"
                 className="btn btn-primary btn-primary-sm-padding"
               >
-                <i className="fa fa-envelope" />
+                <i className="fas fa-envelope" />
                 &nbsp; MAIL
               </a>
               <a href="https://t.me/danielkmak" className="btn btn-primary btn-primary-sm-padding">
-                <i className="fa fa-telegram" />
+                <i className="fab fa-telegram" />
                 &nbsp; TELEGRAM
               </a>
             </div>

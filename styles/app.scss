@@ -10,7 +10,6 @@ $bright-color: white;
 $glitch-color: #5387ef;
 
 @import 'bootstrap';
-@import '../node_modules/font-awesome/css/font-awesome.css';
 @import '../node_modules/animate.css/animate.min.css';
 
 $bodyBg: #082634;
@@ -220,7 +219,7 @@ body  {
 }
 
 .logan {
-  background: url('../assets/img/logan.jpg');
+  background: url('/static/assets/img/logan.jpg');
   background-size: 130%;
   background-position-y: -19px;
   background-position-x: -48px;
@@ -229,7 +228,7 @@ body  {
 }
 
 .daniel {
-  background: url('../assets/img/daniel.jpg');
+  background: url('/static/assets/img/daniel.jpg');
   background-size: 180px;
   background-position-y: 0px;
   box-shadow: #0000001a 0px 10px 10px 4px;
@@ -547,7 +546,7 @@ body  {
 }
 
 .logo {
-  background: url('../assets/img/logo-td.png');
+  background: url('/static/assets/img/logo-td.png');
   background-size: 100%;
   display: inline-block;
   width: 82px;
@@ -570,7 +569,7 @@ body  {
 }
 
 .xxx {
-  background: url('../assets/img/somebg1.png');
+  background: url('/static/assets/img/bg.webp');
   width: 100%;
   max-height: 1080px;
   top: 0;

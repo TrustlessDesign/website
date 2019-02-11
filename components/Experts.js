@@ -24,15 +24,15 @@ export default function Experts() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fa fa-linkedin" />
+                  <i className="fab fa-linkedin-in" />
                 </a>
                 <br />
                 <a href="https://github.com/lsaether" target="_blank" rel="noopener noreferrer">
-                  <i className="fa fa-github" />
+                  <i className="fab fa-github" />
                 </a>
                 <br />
                 <a href="https://twitter.com/7saether" target="_blank" rel="noopener noreferrer">
-                  <i className="fa fa-twitter" />
+                  <i className="fab fa-twitter" />
                 </a>
               </div>
             </div>
@@ -56,7 +56,7 @@ export default function Experts() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fa fa-stack-overflow" />
+                  <i className="fab fa-stack-overflow" />
                 </a>
                 <br />
                 <a
@@ -64,11 +64,11 @@ export default function Experts() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fa fa-linkedin" />
+                  <i className="fab fa-linkedin-in" />
                 </a>
                 <br />
                 <a href="https://github.com/Kuzirashi" target="_blank" rel="noopener noreferrer">
-                  <i className="fa fa-github" />
+                  <i className="fab fa-github" />
                 </a>
                 <br />
                 <a
@@ -76,7 +76,7 @@ export default function Experts() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fa fa-twitter" />
+                  <i className="fab fa-twitter" />
                 </a>
               </div>
             </div>

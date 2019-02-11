@@ -16,8 +16,12 @@ export default function Clients() {
       </div>
       <div className="row">
         <div className="col text-center">
-          <a href="https://emiratecoin.io/" target="_blank" rel="noopener noreferrer">
-            <img src="img/emiratecoin.png" />
+          <a
+            href="https://medium.com/trustless-design/emirate-coin-emco-smart-contract-audit-dfc6e6be2c90"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="/static/assets/img/emiratecoin.png" />
           </a>
         </div>
       </div>

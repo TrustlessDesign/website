@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Header() {
   return (
-    <React.Fragment>
+    <>
       <div className="header">
         <div className="logo-part">
           <div className="logo" />
@@ -23,6 +23,6 @@ export default function Header() {
           </li>
         </ul>
       </div>
-    </React.Fragment>
+    </>
   );
 }

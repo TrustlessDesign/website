@@ -21,6 +21,7 @@
       "no-extra-semi": "error",
       "semi": ["error", "always"],
       "quotes": ["error", "single", { "allowTemplateLiterals": true }],
-      "jsx-quotes": ["error", "prefer-double"]
+      "jsx-quotes": ["error", "prefer-double"],
+      "react/display-name": "off"
   }
 }
